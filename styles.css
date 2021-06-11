@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.full-container{
+    background-image:url("festival.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container{
+    background-color: rgba(66, 22, 95, 0.38);
+    border: 3px solid  rgba(66, 22, 95, 0.38);
+    width:50%;
+    height:50%;
+    max-width: 500px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.login-container .title {
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-self: center;
+    font-size: 4rem;
+}
+
+form{
+    width: 100%;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    flex-shrink: 1  ;
+}
+
+.login-section label {
+    color:white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.login-section input {
+    background-color: rgba(47, 17, 66, 0.726);
+    border: 3px solid  rgba(21, 7, 31, 0.849);
+    outline: none;
+    padding: .5rem;
+    color: white;
+}
+
+.submit-btn{
+    width:100%;
+    background-color: rgba(47, 17, 66, 0.726);
+    border: 3px solid  rgba(21, 7, 31, 0.849);
+    color: white;
+    padding:.25rem;
+}
+
+@media (max-width:800px) {
+    .login-container .title {
+        font-size: 2rem;
+    }
+
+}
